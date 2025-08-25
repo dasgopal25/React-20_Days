@@ -46,6 +46,7 @@ function Header(props){
         <button className="but">Beauty</button>
         <button className="but">Genz</button>
         <button className="but">Studio</button>
+        
 
             </div>
           <input placeholder="Search for products,brands and more" className="searchbar"></input>
