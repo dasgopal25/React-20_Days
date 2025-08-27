@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(246, 246, 241);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    justify-content: center;
+
+}
+.card {
+    background-image: url("https://pngimg.com/d/tshirt_PNG5439.png");
+    background-size: cover;      /* makes it fill the card */
+    background-position: center; /* keeps it centered */
+    background-repeat: no-repeat;/* no tiling */
+    height: 280px;
+    width: 200px;
+    border: 2px solid rgb(205, 201, 201);
+    box-shadow: 0 0 0 0.9 rgb(250, 248, 248) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px; /* optional: rounded corners */
+    overflow: hidden;    /* hide overflow if content goes out */
+}
+.card:hover{
+    box-shadow: 0 0.9 0 2 rgba(53, 228, 73, 0.366) ;
+
+}
+
+.content{
+    position: absolute;
+    margin-bottom: 8px;
+    width: 180px;
+    bottom: 0;
+    padding: 5 9 0 5;
+    background-color: #DA5C37;
+    color: white;
+    font-size: small;
+    text-align: center;
+    font-family:  'Arial Narrow Bold', sans-serif;
+}

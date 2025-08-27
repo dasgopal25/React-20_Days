@@ -10,7 +10,12 @@ function Header(props){
         <button className="but">Beauty</button>
         <button className="but">Genz</button>
         <button className="but">Studio</button>
+<<<<<<< HEAD:3_Day/src/components/Header.jsx
        
+=======
+        
+
+>>>>>>> ad14a5b7b73df521e1c7a90334a263c79fff4cc1:3_Day/first.js
             </div>
           <input placeholder="Search for products,brands and more" className="searchbar"></input>
 
