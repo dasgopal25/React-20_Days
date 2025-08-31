@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(31, 31, 145);
+    display: flex;             
+    justify-content: center;    
+    align-items: center;        
+    text-align: center;
+}
+
+h1 {
+    margin: 0; 
+    color: white;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.cards {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cards h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.cards a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgb(31, 31, 145);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cards a:hover {
+  background: rgb(22, 22, 100);
+}
+
+.but {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.inpu {
+  width: 250px;
+  padding: 10px 15px;
+  border: 2px solid #1f1f91;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.inpu:focus {
+  border-color: #000080;
+  box-shadow: 0 0 6px rgba(31, 31, 145, 0.4);
+}
+
+.but button {
+  padding: 10px 18px;
+  background-color: rgb(31, 31, 145);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.but button:hover {
+  background-color: rgb(22, 22, 100);
+}
+
