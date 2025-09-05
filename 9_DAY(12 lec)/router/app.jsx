@@ -1,8 +1,10 @@
  import React from "react";
 import ReactDom from "react-dom/client"
-import {BrowserRouter,Routes,Route,Link} from"react-router";
+import {BrowserRouter,Routes,Route,Link, Outlet} from"react-router";
 import Contact from "./contact";
 import Service from "./service";
+import Hi from "./hi";
+import Hello from "./hello";
 
 function Home(){
     return(
@@ -22,7 +24,10 @@ function Home(){
         <Routes>
         <Route path="/" element={<Home/>}> </Route>
         <Route path="/contact" element={<Contact/>}> </Route>
-        <Route path="/service" element={<Service/>} > </Route>
+        <Route path="/service" element={<Service/>} > 
+        <Route index element={<Hi/>}></Route>
+        <Route path="hello" element={<Hello/>}></Route>
+        </Route>
         </Routes>
         </BrowserRouter>
         </>
