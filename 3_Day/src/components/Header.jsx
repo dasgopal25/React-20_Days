@@ -1,39 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-
-function Card(props) {
-    return (
-        <div  style={{
-            backgroundColor:"#C63E21",
-            color:"white",
-            border: "1px solid #ddd",
-            borderRadius: "12px",
-            padding: "12px",
-            margin: "10px",
-            marginLeft:"20px",
-            textAlign: "center",
-            width: "200px",
-            boxShadow: "0 4px 8px #C63E21",
-        }}>
-            <img src={props.ImageLink} width="200px" height="200px" />
-
-            <div style={{ textAlign: "center" }}>
-                <h2>{props.clothName}</h2>
-                <h2>{props.discount}</h2>
-                <button style={{
-                    padding: "8px 16px",
-                    border: "none",
-                    borderRadius: "6px",
-                    background: "#007bff",
-                    color: "white",
-                    cursor: "pointer",
-                    boxShadow: "0 4px 8px rgba(25, 245, 76, 1)"
-                }}>Shop Now</button>
-            </div>
-        </div>
-    )
-}
 function Header(props){
     return(
         <div className="heading">
@@ -46,8 +10,12 @@ function Header(props){
         <button className="but">Beauty</button>
         <button className="but">Genz</button>
         <button className="but">Studio</button>
+<<<<<<< HEAD:3_Day/src/components/Header.jsx
+       
+=======
         
 
+>>>>>>> ad14a5b7b73df521e1c7a90334a263c79fff4cc1:3_Day/first.js
             </div>
           <input placeholder="Search for products,brands and more" className="searchbar"></input>
 
@@ -60,45 +28,6 @@ function Header(props){
         </div>
     )
 }
-const arr = [
-  { clothName: "Plain T-shirt", ImageLink: "https://pngimg.com/d/tshirt_PNG5439.png", discount: "40-50% off" },
-  { clothName: "White Hoodie", ImageLink: "https://pngimg.com/d/hoodie_PNG38.png", discount: "30% off" },
-  { clothName: "Folded Hoodie", ImageLink: "https://pngimg.com/d/hoodie_PNG41.png", discount: "35% off" },
-  { clothName: "Graphic Hoodie", ImageLink: "https://pngimg.com/d/hoodie_PNG33.png", discount: "25% off" },
-  { clothName: "Blue Jeans", ImageLink: "https://pngimg.com/d/jeans_PNG5771.png", discount: "20% off" },
-  { clothName: "Denim Jacket", ImageLink: "https://www.bing.com/th/id/OIP.37R-G6wFeLNM5Adz8rGJRgHaE8?w=282&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc4&pid=3.1&rm=2", discount: "45% off" },
-  { clothName: "Formal Shirt", ImageLink: "https://pngimg.com/d/dress_shirt_PNG8117.png", discount: "30% off" },
-  { clothName: "Polo T-shirt", ImageLink: "https://static.vecteezy.com/system/resources/thumbnails/040/529/608/small_2x/ai-generated-3d-rendering-of-a-polo-shirt-for-man-and-woman-on-transparent-background-ai-generated-png.png", discount: "40% off" },
-  { clothName: "Sweater", ImageLink: "https://pngimg.com/d/sweater_PNG39.png", discount: "22% off" },
-  { clothName: "Overcoat", ImageLink: "https://www.bing.com/th/id/OIF.2O9XSAnfvqkPzXkSMtdB4g?w=216&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc4&pid=3.1&rm=2", discount: "50% off" },
-  { clothName: "Cargo Pants", ImageLink: "https://th.bing.com/th/id/OIP.cQspDewUQ23Zyjm-DCfG9wHaJ4?w=184&h=245&c=7&r=0&o=7&pid=1.7&rm=3", discount: "28% off" },
-  { clothName: "Track Pants", ImageLink: "https://pngimg.com/d/hoodie_PNG33.png", discount: "18% off" },
-  { clothName: "Shorts", ImageLink: "https://th.bing.com/th/id/OIP.z_mNcWCvb8rVfewlMgEG_gHaHa?w=184&h=184&c=7&r=0&o=7&pid=1.7&rm=3", discount: "25% off" },
-  { clothName: "Blazer", ImageLink: "https://pngimg.com/d/suit_PNG8131.png", discount: "35% off" },
-  { clothName: "V-neck T-shirt", ImageLink: "https://pngimg.com/d/tshirt_PNG5450.png", discount: "32% off" },
-  { clothName: "Sleeveless Jacket", ImageLink: "https://th.bing.com/th/id/OIP.w1Z6-zNpxfixPhspKTVAjwHaKI?w=184&h=252&c=7&r=0&o=5&pid=1.7", discount: "38% off" },
-  { clothName: "Yoga Pants", ImageLink: "https://pngimg.com/d/leggings_PNG34.png", discount: "15% off" },
-  { clothName: "Cardigan", ImageLink: "https://pngimg.com/d/hoodie_PNG33.png", discount: "27% off" },
-  { clothName: "Maxi Dress", ImageLink: "https://pngimg.com/d/dress_PNG188.png", discount: "20% off" },
-  { clothName: "Track Jacket", ImageLink: "https://pngimg.com/d/jacket_PNG8057.png", discount: "30% off" },
-];
 
 
-function App() {
-    return (
-        <>
-        <Header/>
-        <div  className="middle" style={{ display: "flex", padding: "10px", flexWrap: "wrap" }}>
-            {
-                arr.map((value, index) => <Card key={index} clothName={value.clothName} ImageLink={value.ImageLink} discount={value.discount} />)
-            }
-        </div>
-        </>
-    )
-}
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-
+export default Header;
