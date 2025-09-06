@@ -22,6 +22,8 @@ function Main(){
   setPassword(pass);
   },[Length,NumberCheck,characterCheck])
 
+  console.log(useCallback);
+  
 
 useEffect(()=>{
   passwordgenarator();

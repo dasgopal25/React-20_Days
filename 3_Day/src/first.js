@@ -11,7 +11,7 @@ import arr from "./utils/arr";
 function App() {
 let [A,setA]= useState(arr);
  function ArraySort(){
-    
+  
     A.sort((a,b)=> a.price - b.price);
     setA([...A]);
 }

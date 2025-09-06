@@ -7,7 +7,10 @@ function Body() {
   async function githubFatchData(count) {
     let ran = Math.floor(Math.random()*1000)
     const response = await fetch(`https://api.github.com/users?since=${ran}&per_page=${count}`);
+    console.log(response);
     const data = await response.json();
+    console.log(data);
+    
     setProfile(data);
   }
 
@@ -17,7 +20,10 @@ function Body() {
 
  return (
        <div className="but">
-       <input type="text" className="inpu" placeholder="search here" value={numberofProfile} onChange={(e)=>setnumberofProfile(e.target.value)}></input>
+       <input type="text" className="inpu" placeholder="search here" value={numberofProfile}
+        onChange={(e)=>{
+          setnumberofProfile(e.target.value)
+           console.log(e.target.value)}}></input>
        <button onClick={()=>githubFatchData(Number(numberofProfile))}>Search Profile</button>
       <div className="profiles">
        {
