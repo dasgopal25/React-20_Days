@@ -1,6 +1,6 @@
  import React from "react";
 import ReactDom from "react-dom/client"
-import {BrowserRouter,Routes,Route,Link, Outlet} from"react-router";
+import {BrowserRouter,Routes,Route,Link} from"react-router";
 import Contact from "./contact";
 import Service from "./service";
 import Hi from "./hi";
