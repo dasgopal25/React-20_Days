@@ -1,21 +1,11 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router"
 
+import FetchData from "./CustomHook";
 
 export default function Card() {
-
-    const [profile, setProfile] = useState(null);
-    let params = useParams();
-
-    async function dataFatch() {
-        const respons = await fetch(`https://api.github.com/users/${params.name}`);
-        const data = await respons.json();
-
-        setProfile(data)
-    }
-    useEffect(() => {
-        dataFatch();
-    }, [])
+      
+    const {profile} =  FetchData();
+   
+   
     return (
         <>
 
