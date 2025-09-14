@@ -1,9 +1,10 @@
 import React, { use, useEffect, useState } from "react";
 import ReactDom from "react-dom/client";
-import DasStore from "./Dasstore";
-import Card from "./Card";
+import Counting from "./Counting";
 import { Provider } from "react-redux";
-import Stored from "./Stored"
+import Stores from "./Stores";
+import InputCounter from "./inputCounter";
+
 // function App(){
 
 //     const [reply,setReply] = useState("")
@@ -56,12 +57,14 @@ import Stored from "./Stored"
 // }
 
 function App(){
-
+ console.log(Stores);
  
     return(
-        <Provider store={Stored} >
-        <DasStore/>
-        <Card/>
+        <Provider store={Stores} >
+        <Counting/>
+        <br />
+        <br />
+        <InputCounter/>
         </Provider>
     )
 }
