@@ -5,6 +5,8 @@ import { addItem, removeItem } from "./Slice2";
 export default function FoodCart({item}){
      const [inCart,setCart] = useState(false)
      const dispatch = useDispatch();
+     console.log(dispatch);
+     
     function handClick(){
         if(inCart){
            

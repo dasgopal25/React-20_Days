@@ -4,8 +4,8 @@ const FoodSlice = createSlice({
     name:"slice2",
     initialState:{count:0},
     reducers:{
-        addItem:(state)=>{state.count = state.count+1},
-        removeItem:(state)=>{state.count = state.count - 1}
+        addItem:(state)=>{state.count++},
+        removeItem:(state)=>{state.count--}
     }
 });
 
